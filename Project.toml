@@ -1,7 +1,10 @@
 name = "BBShiftAutomorphisms"
 uuid = "55c8e5b1-f282-4648-a472-8a8fa2cdc5d1"
-authors = ["John Lapeyre"]
 version = "1.0.0"
+authors = ["John Lapeyre"]
+
+[workspace]
+projects = ["test", "docs"]
 
 [deps]
 Dictionaries = "85a47980-9c8c-11e8-2b9f-f7ca1fa99fb4"
@@ -10,14 +13,8 @@ Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 
 [compat]
-Dictionaries = "0.4.4"
-LinearAlgebra = "1.11.0"
-Nemo = "0.50.0"
-Reexport = "1.2.2"
+Dictionaries = ">=0.4"
+LinearAlgebra = ">=1.10"
+Nemo = ">=0.50"
+Reexport = ">=1.2"
 julia = "1.10"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]

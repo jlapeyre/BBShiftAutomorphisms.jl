@@ -1,11 +1,16 @@
 using BBShiftAutomorphisms
 using Test
 
+include("test_logical_shifts.jl")
+include("test_check_matrices.jl")
+include("test_z6xz6groups.jl")
+include("test_aqua.jl")
+
 @testset "BBShiftAutomorphisms.jl" begin
     # Check matrices for BB code
     @test verify_paper()
 
-    # Test by enumeration that all elements of Z6xZ6 are implemented by no more
+    # Test by enumeration that all elements of Z₆×Z₆ are implemented by no more
     # than two generators.
     @test all_elements_present()
 
